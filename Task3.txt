@@ -1,0 +1,28 @@
+English:
+
+MLE         13.2128
+0.0001      43.0002
+0.001       39.1900
+0.01        41.4871
+0.1         60.1272
+0.5         100.5594
+1           134.6499
+
+French:
+
+MLE         13.1446
+0.0001      38.2187
+0.001       36.0415
+0.01        40.2615
+0.1         62.3532
+0.5         109.6664
+1           150.6231
+
+
+We can see that perplexity rises with the delta value, and that MLE (d = 0)
+performs the best out of all delta values. As perplexity increases, the
+quality of predictions decreases, so a logical conclusion here is that
+smaller delta values typically produce better models.
+
+However, it appears that performance with d=0.001 is actually better than 
+with d=0.0001, which suggests there may be some local minima for delta.
